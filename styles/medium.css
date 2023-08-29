@@ -1,0 +1,75 @@
+@media only screen and (min-width: 48em){
+    .top{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* z-index: 20; */
+    }
+    .nshow{
+        display: block;
+        position: static;
+        height: 0;
+        z-index: 0;
+        background-color: transparent;
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .ham, .not{
+        display: none;
+    }
+    nav ul{
+        display: flex;
+        gap: 1em;
+    }
+    nav ul li a {
+        font-size: 1em;
+    }
+    header{
+        background-color: transparent;
+    }
+    .hero-box{
+        grid-column: 1/4;
+        grid-row: 1/4;
+    }
+  header{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        z-index: 12;
+        justify-self: start;
+        width: 60%;
+    }
+    .logo{
+        width: 6em;
+    }
+    .hero-text{
+        grid-column: 2/4;
+        grid-row: 2/3;
+        margin-bottom: 6em;
+        font-size: 1.5em;
+    }
+    .later{
+        display: block;
+    }
+    .statement-box{
+        display: flex;
+        gap: 2em;
+    }
+    .ev-section{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em;
+        width: 95%;
+        margin: 0 auto;
+    }
+    /* .ev-box{
+        margin: 0;
+    } */
+    .exco-section{
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 70em;
+        width: 100%;
+    }
+    .exco-box{
+        height: 100%;
+        /* place-self: centre centre; */
+    }
+}
